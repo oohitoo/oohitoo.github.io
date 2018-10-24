@@ -4,20 +4,23 @@ icon: fa-envelope
 order: 4
 ---
 
-<p>Elementum sem parturient nulla quam placerat viverra
-mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
+<div id="disqus_thread"></div>
+<script>
 
-<form method="post" action="https://formspree.io/{{ site.email }}">
-  <div class="row">
-    <div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
-    <div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
-    <div class="12u$">
-      <textarea name="message" placeholder="Message"></textarea>
-    </div>
-    <div class="12u$">
-      <input type="submit" value="Send Message" />
-    </div>
-  </div>
-</form>
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://gitblog-5.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
